@@ -9,7 +9,9 @@ else
     brew update
 fi
 
-#Install required packages
+sudo chown -R $(whoami) /opt/homebrew
+
+#Install required packages for mac install - remove as required if you dont need them
 brew install wget
 brew install grep
 brew install git
@@ -17,8 +19,17 @@ brew install --cask iterm2
 brew install --cask slack
 brew install --cask zoom
 brew install --cask discord
+brew install --cask whatsapp
+brew install --cask cyberduck
+brew install --cask skype
 brew install zsh zsh-completions
 brew install zsh-syntax-highlighting
+brew install authy
+brew install teamviewer
+brew install bitwarden
+brew install spectacle
+brew install htop
+
 
 #Install fonts 
 cd ~
