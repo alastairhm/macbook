@@ -57,6 +57,9 @@ chmod +x install.sh
 
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+#Add zsh autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
 cat <<EOF >> ~/.zshrc
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
@@ -64,7 +67,7 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 # Add a space in the first prompt
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
