@@ -11,6 +11,9 @@ fi
 
 sudo chown -R $(whoami) /opt/homebrew
 
+#Install Rosetta as Bluejeans and Signal require it on M1 Macs
+/usr/sbin/softwareupdate --install-rosetta
+
 #Install required packages for new mac install - remove as required if you dont need them
 brew install wget
 brew install grep
