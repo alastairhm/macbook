@@ -47,21 +47,20 @@ cd fonts
 ./install.sh
 
 #Install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+chmod +x install.sh
+./install.sh --unattended
 
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-cat <<EOF>> ~/.zshrc
+cat <<EOF >> ~/.zshrc
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’
-plugins=(
-    git
-    zsh-autosuggestions
-)
+plugins=( git zsh-autosuggestions )
 ZSH_THEME='powerlevel9k/powerlevel9k'
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 EOF
