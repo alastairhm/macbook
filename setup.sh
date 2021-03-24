@@ -11,7 +11,7 @@ fi
 
 sudo chown -R $(whoami) /opt/homebrew
 
-#Install required packages for mac install - remove as required if you dont need them
+#Install required packages for new mac install - remove as required if you dont need them
 brew install wget
 brew install grep
 brew install git
