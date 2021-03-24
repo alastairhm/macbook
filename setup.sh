@@ -23,7 +23,7 @@ brew install --cask discord
 brew install --cask whatsapp
 brew install --cask cyberduck
 brew install --cask skype
-brew install --cask wirehsark
+brew install --cask wireshark
 brew install --cask firefox
 brew install --cask signal
 brew install --cask surfshark
@@ -47,6 +47,7 @@ cd fonts
 ./install.sh
 
 #Install oh my zsh
+cd ~
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 chmod +x install.sh
 ./install.sh --unattended
