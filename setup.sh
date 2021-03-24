@@ -28,6 +28,7 @@ brew install --cask firefox
 brew install --cask signal
 brew install --cask surfshark
 brew install --cask viscosity
+brew install --cask royal-tsx
 brew install zsh zsh-completions
 brew install zsh-syntax-highlighting
 brew install authy
@@ -35,6 +36,8 @@ brew install teamviewer
 brew install bitwarden
 brew install spectacle
 brew install htop
+brew install homebrew/cask-drivers/logitech-options
+
 
 
 #Install fonts 
