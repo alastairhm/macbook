@@ -20,12 +20,20 @@ brew install --cask discord
 brew install zsh zsh-completions
 brew install zsh-syntax-highlighting
 
+#Install fonts 
+
+cd ~/Library/Fonts && { 
+    curl -O 'https://github.com/andrewglass3/macbook/blob/master/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf'
+    cd -; }
+
 #Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 cd ~/.oh-my-zsh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 echo "ZSH_THEME="powerlevel9k/powerlevel9k" >> ~/.zshrc
+
+
 
 echo "POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs) \n
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time) \n
