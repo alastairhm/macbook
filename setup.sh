@@ -21,10 +21,11 @@ brew install zsh zsh-completions
 brew install zsh-syntax-highlighting
 
 #Install fonts 
+cd ~
 
-cd ~/Library/Fonts && { 
-    curl -O 'https://github.com/andrewglass3/macbook/blob/master/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf'
-    cd -; }
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
 
 #Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
