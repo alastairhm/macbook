@@ -32,6 +32,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 cd ~/.oh-my-zsh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 echo "ZSH_THEME="powerlevel9k/powerlevel9k" >> ~/.zshrc
 
 
