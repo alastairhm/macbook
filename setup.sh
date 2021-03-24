@@ -30,7 +30,6 @@ cd fonts
 #Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-cd ~/.oh-my-zsh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 echo "ZSH_THEME="powerlevel9k/powerlevel9k" >> ~/.zshrc
@@ -50,11 +49,6 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true \n
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’ \n 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh \n 
 " >> ~/.zshrc
-
-echo "Dont forget to manually edit ~/.zshrc and comment out ZSH_THEME=robbyrussell, I havent figured out the sed command yet to automate this part"
-
-echo "Open iterm2 - goto Preferences > Profile > Text > Font and choose Meslo LG M for Powerline"
-echo "Open iterm2 - goto Preferences > Profile > Colors > Color Presets > import and choose Clovis-iTerm2-Color-Scheme.itermcolors then select Color Presets again and select the new color scheme"
 
 
 
