@@ -22,6 +22,11 @@ brew install --cask discord
 brew install --cask whatsapp
 brew install --cask cyberduck
 brew install --cask skype
+brew install --cask wirehsark
+brew install --cask firefox
+brew install --cask signal
+brew install --cask surfshark
+brew install --cask viscosity
 brew install zsh zsh-completions
 brew install zsh-syntax-highlighting
 brew install authy
@@ -43,26 +48,19 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-echo "ZSH_THEME='powerlevel9k/powerlevel9k'" >> ~/.zshrc
-
-
-
-echo "POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs) \n
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time) \n
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true \n 
-# Add a space in the first prompt
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f" \n 
-plugins=( \n
-    git \n
-    zsh-autosuggestions \n
-) \n  
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true \n 
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’ \n 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh \n 
-" >> ~/.zshrc
-
-
-
-
+cat <<EOF>> ~/.zshrc
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’
+plugins=(
+    git
+    zsh-autosuggestions
+)
+ZSH_THEME='powerlevel9k/powerlevel9k'
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+EOF
 
 
