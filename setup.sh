@@ -3,8 +3,8 @@
 #Check if Homebrew is installed
 which -s brew
 if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    echo 'Please install Homebrew by running the following command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users\/$USER/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     brew update
 fi
