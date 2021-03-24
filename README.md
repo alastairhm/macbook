@@ -8,4 +8,8 @@ Steps to use this script:
 3) Edit /.zshrc and comment out ZSH_THEME=robbierussell entry
 4) Open iterm2 - goto Preferences > Profile > Text > Font and choose Meslo LG M for Powerline + change font size to your liking
 5) Open iterm2 - goto Preferences > Profile > Colors > Color Presets > import and choose Clovis-iTerm2-Color-Scheme.itermcolors then select Color Presets again and select the new color scheme
-6) Close and reopen iterm2
+6) Open Preferences -> Profiles -> Select Default Profile(default profile will be starred) -> General -> Command -> Select Login Shell -> Send text at start:
+source ~/.zshrc
+
+Enter the value source ~/.zshrc
+7) Close and reopen iterm2
