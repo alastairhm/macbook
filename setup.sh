@@ -18,6 +18,7 @@ brew install git
 brew install --cask iterm2
 brew install --cask slack
 brew install --cask zoom
+brew install --cask bluejeans
 brew install --cask discord
 brew install --cask whatsapp
 brew install --cask cyberduck
