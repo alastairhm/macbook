@@ -11,5 +11,4 @@ Steps to use this script:
 6) Open Preferences -> Profiles -> Select Default Profile(default profile will be starred) -> General -> Command -> Select Login Shell -> Send text at start:
 source ~/.zshrc
 
-Enter the value source ~/.zshrc
 7) Close and reopen iterm2
