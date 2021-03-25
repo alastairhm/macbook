@@ -1,4 +1,4 @@
-# macbook
+# macbook base config setup
 This script allows a quick base install of a colourful git prompt environment to be configured with homebrew/git/ohmyzsh & powerline fonts to be installed for new users.
 
 Steps to use this script:
