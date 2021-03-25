@@ -12,7 +12,12 @@ fi
 sudo chown -R $(whoami) /opt/homebrew
 
 #Install Rosetta as Bluejeans and Signal require it on M1 Macs
-/usr/sbin/softwareupdate --install-rosetta
+if [[`uname -m` == 'arm64']], then
+   echo 'Installing Rosetta for M1 platform as needed for Bluejeans and Signal'
+   /usr/sbin/softwareupdate --install-rosetta
+else
+    echo 'Plaform is not M1 - continuing'
+fi
 
 #Install required packages for new mac install - remove as required if you dont need them
 brew install wget
