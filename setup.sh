@@ -52,6 +52,11 @@ brew install homebrew/cask-drivers/logitech-options
 brew install tfenv
 brew install awscli
 brew install pyenv
+brew install packer 
+brew install terragrunt
+brew install ack 
+brew install azure-cli
+brew install ncdu
 
 
 
