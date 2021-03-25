@@ -51,6 +51,7 @@ brew install htop
 brew install homebrew/cask-drivers/logitech-options
 brew install tfenv
 brew install awscli
+brew install pyenv
 
 
 
