@@ -58,6 +58,7 @@ brew install ack
 brew install azure-cli
 brew install ncdu
 brew install tree
+brew install aws-okta
 
 
 
