@@ -61,6 +61,7 @@ chmod +x install.sh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 #Add zsh autosuggestions
+source ~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 cat <<EOF >> ~/.zshrc
